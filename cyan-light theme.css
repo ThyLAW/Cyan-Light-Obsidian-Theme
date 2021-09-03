@@ -1,0 +1,295 @@
+/*Author: ThyLAW 
+  Credits: Maker of 80s neon theme. I used his template to learn from and modify*/
+
+.theme-dark,
+.theme-light {
+  --accent-1: #000000;
+  --accent-2: #20eef5;
+  --accent-3: #29abcb;
+  --accent-4: #4bc7e0;
+  --accent-5: #19ffff;
+  --accent-6: #ffffff;
+  --accent-7: rgba(41, 171, 203, 0.2);
+
+  --background-modifier-form-field: var(--background-primary-alt);
+  /* Text side bar text color, inner icons, settings text */
+  --background-primary: #dae2eb;
+  /*separator bar left side */
+  --background-primary-alt: #f2f2f2;
+  /* notes menu left side */
+  --background-secondary: #dae2eb;
+  /* Outer bar, higlight side bar color */
+  --background-secondary-alt: #f2f2f2;
+
+  --background-modifier-error: rgb(123, 223, 248);
+  --background-modifier-error-hover: rgb(154, 238, 253);
+  --text-accent: var(--accent-1);
+  --text-accent-hover: var(--accent-1);
+
+  /* text selected sidebar + icons*/
+  --text-normal: var(--accent-3);
+  /* default text sidebar*/
+  --text-muted: var(--accent-3);
+  /* sidebar icon */
+  --text-faint: var(--accent-3);
+
+  --interactive-normal: var(--accent-3);
+  --interactive-hover: var(--accent-1);
+  --interactive-accent: var(--accent-4);
+  --interactive-accent-hover: var(--accent-1);
+
+  --background-accent: var(--accent-1);
+  --background-modifier-border: var(--background-primary-alt);
+
+  --text-highlight-bg: var(--accent-3);
+
+  /* obsidian dark defaults (overriding for light) */
+  /* highlight background */
+  --text-selection: var(--accent-4);
+  --text-on-accent: var(--accent-3);
+  --interactive-accent-rgb: 255, 238, 245;
+  --scrollbar-active-thumb-bg: rgba(41, 171, 203, 0.3);
+  --scrollbar-bg: rgba(242, 242, 242, 0.5);
+  --scrollbar-thumb-bg: rgba(41, 171, 203, 0.2);
+}
+
+/* 2. General UI */
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action {
+  color: var(--accent-3);
+}
+.side-dock-ribbon-action:hover {
+  background-color: var(--accent-7);
+}
+
+.workspace-leaf.mod-active .workspace-leaf-header-title {
+  color: var(--text-accent);
+}
+
+.widget-icon:hover {
+  color: var(--accent-1);
+}
+/* 2.1. Title bar */
+.titlebar {
+  background-color: var(--background-primary-alt);
+}
+
+.titlebar-inner {
+  color: var(--accent-1);
+}
+
+.titlebar-inner {
+  color: var(--accent-3);
+}
+
+.titlebar-button {
+  opacity: 1;
+}
+
+.titlebar-button:hover {
+  color: var(--accent-1);
+}
+
+button.mod-cta {
+  background-color: var(--background-secondary-alt);
+}
+
+button.mod-cta:hover {
+  background-color: var(--accent-7);
+}
+
+.nav-action-button.is-active {
+  background-color: var(--accent-7);
+}
+.titlebar-button.mod-close:hover {
+  background-color: var(--accent-7);
+  color: var(--accent-1);
+}
+.titlebar-button:hover {
+  background-color: var(--accent-7);
+}
+
+.nav-action-button:hover {
+  background-color: var(--accent-7);
+}
+
+.workspace-tab-header-inner:hover {
+  background-color: var(--accent-7);
+}
+
+.tree-item-self:hover .tree-item-flair {
+  background-color: var(--accent-7);
+}
+.clickable-icon:hover {
+  color: var(--accent-7);
+}
+.dropdown:hover {
+  background-color: var(--accent-7);
+}
+/* 3. Editor and preview */
+.cm-s-obsidian,
+
+/* Text*/
+
+.markdown-preview-view {
+  --text-normal: var(--accent-1);
+  --text-faint: var(--accent-3);
+  --text-accent: var(--accent-3);
+  color: var(--text-normal);
+}
+
+.CodeMirror-guttermarker-subtle {
+  color: rgb(53, 185, 199);
+}
+
+/*inline code*/
+
+.cm-s-obsidian span.cm-inline-code,
+code {
+  color: rgb(49, 202, 240) !important;
+}
+/* 3.2. Formatting operators */
+.cm-s-obsidian .cm-formatting,
+.cm-s-obsidian span.cm-formatting-link,
+.cm-s-obsidian span.cm-formatting-link-string.cm-url,
+.cm-s-obsidian span.cm-inline-code.cm-formatting-code,
+.cm-s-obsidian span.cm-formatting-code,
+.cm-s-obsidian span.cm-formatting-quote,
+.cm-s-obsidian span.cm-hr,
+.cm-s-obsidian pre.HyperMD-table-row span.cm-hmd-table-sep,
+.cm-s-obsidian pre.HyperMD-table-row-1 > span {
+  color: var(--accent-4);
+}
+
+/* 3.3. External links */
+.cm-s-obsidian .cm-formatting-link + .cm-formatting-link-string + .cm-url,
+.cm-s-obsidian .cm-string.cm-url,
+.cm-s-obsidian span.cm-link:not(.cm-formatting),
+.cm-s-obsidian span.cm-url,
+a {
+  color: var(--accent-4);
+}
+
+/* 3.4. Internal links */
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian span.cm-hmd-internal-link,
+a.internal-link,
+a.tag {
+  color: var(--accent-3);
+}
+
+/* 3.5. blockquotes, embeds, tables */
+.markdown-preview-view blockquote {
+  background-color: rgba(0, 174, 255, 0.13);
+  box-shadow: none;
+  border-right: 5px rgb(3, 175, 255);
+}
+
+/* 3.6. Code */
+.markdown-preview-view code {
+  color: var(--accent-3) !important;
+}
+
+.cm-s-obsidian span.cm-inline-code,
+code {
+  color: var(--accent-2);
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--accent-3);
+}
+
+pre code {
+  color: var(--text-normal);
+}
+
+/* 3.7. Strikethrough */
+.cm-strikethrough,
+s {
+  text-decoration-color: var(--accent-1);
+}
+
+/* 3.8. Escape chars */
+.cm-s-obsidian span.cm-hmd-escape-backslash {
+  color: var(--text-faint);
+}
+
+.cm-s-obsidian span.cm-hmd-escape-char {
+  color: var(--accent-3);
+}
+
+/* 3.9. Bullets and numbering */
+.cm-s-obsidian span.cm-formatting-list,
+.cm-s-obsidian span.cm-formatting-task {
+  color: var(--accent-3);
+}
+
+.cm-s-obsidian span.cm-formatting-list {
+  font-weight: bold;
+}
+
+/* 4. Graph view */
+.graph-view.color-fill {
+  /* default */
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--accent-1);
+  opacity: 0.7;
+}
+
+.graph-view.color-line {
+  /* color: var(--accent-2);
+  opacity: 0.5; */
+  color: var(--accent-3);
+}
+
+.graph-view.color-arrow {
+  color: var(--accent-2);
+  opacity: 1;
+}
+
+.graph-view.color-text {
+  color: var(--accent-2-muted);
+}
+
+.graph-view.color-fill-highlight {
+  /* default */
+}
+
+.graph-view.color-line-highlight {
+  /* default */
+}
+
+.theme-light .graph-view.color-fill-attachment,
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--accent-6);
+}
+
+.theme-dark .graph-view.color-fill-tag,
+.theme-light .graph-view.color-fill-tag {
+  color: var(--accent-4);
+}
+
+/* CHANGE PREVIEW CODE BLOCK*/
+
+.theme-dark :not(pre) > code[class*="language-"],
+.theme-dark pre[class*="language-"] {
+  background-color: rgb(29, 73, 114);
+  box-shadow: 2px 2px 2px 2px rgba(7, 189, 189, 0.3);
+}
+
+.cm-inline-code {
+  color: black;
+}
+.CodeMirror-line {
+  color: black;
+}
+.code {
+  color: black;
+}
+
+/* 5.2. fixes for buttons */
+button.mod-warning {
+  color: var(--text-normal);
+}
