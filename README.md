@@ -4,7 +4,7 @@
 
 This theme is a gray/blue mix theme that is sometimes referred to as "Cyan-Light". I enjoy the color of gray chosen as it easier on the eyes and it is not dark which some people may not like. It is hard to mix in true cyan as it would be too bright, so I opted for a cooler cyan-blue.
 
-![img](./picture.jpg)
+![img](https://github.com/ThyLAW/Cyan-Light-Obsidian-Theme/blob/main/picture.JPG)
 
 ## Install
 
